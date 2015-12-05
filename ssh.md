@@ -1,8 +1,8 @@
-½s¿è  
+ï»¿ç·¨è¼¯  
 /etc/ssh/sshd_config
-­×§ï  
+ä¿®æ”¹  
 PermitRootLogin without-password
-¬°  
+ç‚º  
 PermitRootLogin yes
-°õ¦æ  
+åŸ·è¡Œ  
 /etc/init.d/ssh restart

@@ -1,16 +1,17 @@
-­×§ï/etc/network/interfaces
-¥[¤W
-iface default inet dhcp
-¤º®e¦p¤U
-auto wlan0
-allow-hotplug wlan0
-iface wlan0 inet manual
-wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-iface default inet dhcp
-¬dµL½u°ò¦a¥x
-$ sudo iwlist wlan0 scan | grep ESSID
-­×§ï/etc/wpa_supplicant/wpa_supplicant.conf
-ÀÉ©³¥[¤W
+ï»¿ä¿®æ”¹/etc/network/interfaces  
+åŠ ä¸Š  
+iface default inet dhcp  
+å…§å®¹å¦‚ä¸‹  
+auto wlan0  
+allow-hotplug wlan0  
+iface wlan0 inet manual  
+wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf  
+iface default inet dhcp  
+æŸ¥ç„¡ç·šåŸºåœ°å°  
+$ sudo iwlist wlan0 scan | grep ESSID  
+ä¿®æ”¹/etc/wpa_supplicant/wpa_supplicant.conf  
+æª”åº•åŠ ä¸Š
+```
 network={
         ssid="_ssid_"
         psk="_password_"
@@ -19,9 +20,10 @@ network={
         pairwise=CCMP
         auth_alg=OPEN
 }
-$ sudo ifdown wlan0
-$ sudo ifup wlan0 
-¥X²{¥H¤U°T®§,¦ı¤´¥i¥H¥Î,­nµ¥¤@¤U
-ioctl[SIOCSIWAP]: Operation not permitted
-ioctl[SIOCSIWENCODEEXT]: Invalid argument
-ioctl[SIOCSIWENCODEEXT]: Invalid argument
+```
+$ sudo ifdown wlan0  
+$ sudo ifup wlan0  
+å‡ºç¾ä»¥ä¸‹è¨Šæ¯,ä½†ä»å¯ä»¥ç”¨,è¦ç­‰ä¸€ä¸‹  
+ioctl[SIOCSIWAP]: Operation not permitted  
+ioctl[SIOCSIWENCODEEXT]: Invalid argument  
+ioctl[SIOCSIWENCODEEXT]: Invalid argument  
